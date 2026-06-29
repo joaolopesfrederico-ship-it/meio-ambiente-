@@ -1,30 +1,79 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-</head>
-     <meta charset="UTF-8"
-     <meta name="viewport"
-    content="width=device-width, initial-scale=1.0"
-    <title>Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giro Musical | Seu Blog de Música</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-  
-        <h1>Meu blog tech</h1>
-        <p>Vou compartilhar conhecimentos sobre 
-        tecnologia e programação</p>
-    </header>
-    <main>
 
-        <h2>Meu primeiro post</h2>
-        <p>Por: João Marcelo</p>
-        <p>Boas-vindas ao meu novo blog! Aqui vou
-        compartilhar dicas de programação e curiosidades
-        da área de tecnologia.</p>
+    <header>
+        <div class="logo">🎵 Giro Musical</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Resenhas</a>
+            <a href="#">Playlists</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>O Som que Move o Mundo</h2>
+        <p>Descubra novos artistas, resenhas de álbuns e as últimas novidades da cena musical.</p>
+    </section>
+
+    <main class="container">
+        <section class="feed">
+            
+            <article class="post">
+                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800" alt="Show ao vivo">
+                <div class="post-content">
+                    <span class="category">Resenha</span>
+                    <h3>O Retorno dos Shows Ao Vivo: A Energia que Faltava</h3>
+                    <p>Analisamos como a nova turnê das maiores bandas de rock está redefinindo a experiência dos festivais este ano...</p>
+                    <a href="#" class="read-more">Leia mais</a>
+                </div>
+            </article>
+
+            <article class="post">
+                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800" alt="Mesa de DJ">
+                <div class="post-content">
+                    <span class="category">Álbum</span>
+                    <h3>Top 5 Álbuns de Música Eletrônica para Ouvir Hoje</h3>
+                    <p>Do Synthwave ao Techno profundo, preparamos uma lista com os lançamentos mais impactantes do mês.</p>
+                    <a href="#" class="read-more">Leia mais</a>
+                </div>
+            </article>
+
+        </section>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Destaque do Mês</h3>
+                <p><strong>Artista:</strong> Neon Vibes</p>
+                <p><strong>Gênero:</strong> Indie Pop</p>
+                <audio controls>
+                    <source src="sua-musica.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+            
+            <div class="widget">
+                <h3>Newsletter</h3>
+                <p>Receba novidades musicais direto no seu e-mail.</p>
+                <form id="newsletter-form">
+                    <input type="email" id="email-input" placeholder="Seu melhor e-mail" required>
+                    <button type="submit">Inscrever</button>
+                </form>
+            </div>
+        </aside>
     </main>
-  </body>
+
+    <footer>
+        <p>&copy; 2026 Giro Musical. Criado com 🎸 e café.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
